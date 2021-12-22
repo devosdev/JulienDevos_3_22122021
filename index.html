@@ -5,10 +5,21 @@
     <title>ohmyfood - Accueil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="preload.css">
     <script src="https://kit.fontawesome.com/075b700c02.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="spinner-wrapper" id="hideMe">
+ <div class="spinner">
+  <div class="sk-folding-cube">
+   <div class="sk-cube1 sk-cube"></div>
+   <div class="sk-cube2 sk-cube"></div>
+   <div class="sk-cube4 sk-cube"></div>
+   <div class="sk-cube3 sk-cube"></div>
+  </div>
+ </div>
+</div>
     <a class="logo" href="index.html"><img src="images/logo/ohmyfood.png" alt="logo"></a>
     <div class="location">
         <i class="fas fa-map-marker-alt"></i>
@@ -17,7 +28,7 @@
     <div class="first-wrap">
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <a class="btn-grad" href="#">Explorer les cartes</a>
+        <a class="btn-grad" href="#restaurants">Explorer les cartes</a>
     </div>
     <div class="second-wrap">
         <h1>Fonctionnement</h1>
@@ -37,10 +48,10 @@
             <h3>Dégustez au restaurant</h3>
         </div>
     </div>
-    <div class="third-wrap">
+    <div class="third-wrap" id="restaurants">
         <h1>Restaurants</h1>
         <div class="block">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant 1">
+            <a href="la-palette-de-gout.html"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant 1"></a>
             <div class="first-part">
                 <a href="la-palette-de-gout.html">La palette de goût</a>
                 <p>Ménilmontant</p>
@@ -50,9 +61,9 @@
             </div>
         </div>
         <div class="block">
-            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant 2">
+            <a href="la-note-enchante.html"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant 2"></a>
             <div class="first-part">
-                <a href="#">La note enchanté</a>
+                <a href="la-note-enchante.html">La note enchanté</a>
                 <p>Charonne</p>
             </div>
             <div class="second-part">
@@ -60,9 +71,9 @@
             </div>
         </div>
         <div class="block">
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant 3">
+            <a href="a-la-francaise.html"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant 3"></a>
             <div class="first-part">
-                <a href="#">À la française</a>
+                <a href="a-la-francaise.html">À la française</a>
                 <p>Cité rouge</p>
             </div>
             <div class="second-part">
@@ -70,9 +81,9 @@
             </div>
         </div>
         <div class="block">
-            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant 4">
+            <a href="le-delice-des-sens.html"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant 4"></a>
             <div class="first-part">
-                <a href="#">Le délice des sens</a>
+                <a href="le-delice-des-sens.html">Le délice des sens</a>
                 <p>Folie-Méricourt</p>
             </div>
             <div class="second-part">

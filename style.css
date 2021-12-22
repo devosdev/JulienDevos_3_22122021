@@ -27,6 +27,7 @@ body {
     margin: 0;
 }
 
+
 .logo {
     width: 100%;
     min-width: 100%;
@@ -110,6 +111,10 @@ body {
     border-radius: 50px;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-grad:hover {
+    background-image: linear-gradient(to right bottom, #fb8adc, #e784dc, #d17edc, #ba79da, #a274d8);
 }
 
 .second-wrap {
@@ -212,7 +217,7 @@ body {
 .third-wrap .block .first-part {
     margin: 0px;
     height: 100px;
-    width: 70%;
+    width: 80%;
     display: flex;
     float: left;
     flex-direction: column;
@@ -221,10 +226,12 @@ body {
 .third-wrap .block .second-part {
     margin: 0px 20px 0px 0px;
     height: 100px;
-    width: 20%;
+    width: 10%;
     display: flex;
     float: right;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .third-wrap .block .first-part a {
@@ -247,9 +254,20 @@ body {
 .third-wrap .block .second-part .fa-heart {
     font-size: 30px;
     font-weight: 100;
-    line-height: 100px;
-    width: 100%;
+    width: 30px;
     text-align: right;
+}
+
+.fa-heart::before {
+    font-weight: 100;
+    transition: color 0.5s ease-out;
+    transition: opacity 05.s;
+}
+
+.fa-heart:hover::before {
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
 }
 
 footer {
@@ -302,6 +320,8 @@ footer a .fas {
     min-width: 100%;
     height: 300px;
     object-fit: cover;
+    
+    
 }
 
 .meal {
@@ -312,13 +332,12 @@ footer a .fas {
     padding: 30px 0px 30px 0px;
     background-color: #f6f6f6;
     border-radius: 30px 30px 0px 00px;
-    position: absolute;
-    z-index: 1;
+    position: relative;
 }
 
 .meal h1 {
     height: auto;
-    width: 100;
+    width: 100%;
     font-family: 'Shrikhand', cursive;
     margin-left: 20px;
     margin: 0px 0px 30px 3%;
@@ -351,10 +370,11 @@ footer a .fas {
     align-content: center;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.meal .meal-block:hover {
-    
+    opacity: 0;
+    animation-name: fadeinout;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .meal .meal-block:hover .first-part {
@@ -412,7 +432,7 @@ footer a .fas {
     text-align: center;
     display: none;
     margin-top: 7px;
-    
+
 }
 
 .meal .meal-block .first-part h3 {
@@ -451,24 +471,163 @@ footer a .fas {
     padding-bottom: 50px;
 }
 
-#footer {
-    margin-top: 1365px;
+
+
+
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+
+    1.85% {
+        opacity: 0.2;
+    }
+
+    4.63% {
+        opacity: 0.5;
+    }
+
+    6.48% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#block1 {
+    animation-delay: 0s;
+}
+
+#block2 {
+    animation-delay: 0.5s;
+}
+
+#block3 {
+    animation-delay: 1s;
+}
+
+#block4 {
+    animation-delay: 1.5s;
+}
+
+#block5 {
+    animation-delay: 2s
+}
+
+#block6 {
+    animation-delay: 2.5s;
+}
+
+#block7 {
+    animation-delay: 3s;
+}
+
+#block8 {
+    animation-delay: 3.5s;
+}
+
+#block9 {
+    animation-delay: 4s;
+}
+
+#block10 {
+    animation-delay: 4.5s;
 }
 
 
+/*Responsive*/
 
 
+@media all and (min-width: 992px) {
+
+    .second-wrap .step {
+        width: 29%;
+        min-width: 29%;
+        margin: 20px 0px 20px 3%;
+        display: flex;
+        float: left;
+    }
+
+    .second-wrap {
+        height: auto;
+        padding-bottom: 120px;
+        display: block;
+    }
+
+    .third-wrap {
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .third-wrap h1 {
+        width: 95%;
+        height: auto;
+        margin: 50px 0px 0px 20px;
+    }
+
+    .third-wrap .block {
+        width: 20%;
+        min-width: 20%;
+        margin-left: 3%;
+    }
+
+    .meal .meal-block {
+        width: 29%;
+        min-width: 29%;
+        height: 90px;
+        margin: 0px 0px 20px 3%;
+    }
+}
 
 
+@media all and (max-width: 320px) {
 
+    .meal h1 {
+        font-size: 27px;
+    }
 
+    .meal h1 i {
+        font-weight: 100;
+        margin-left: 15px;
+    }
 
+    .meal .meal-block .second-part .price {
+        margin: 12px 0px 0px 0px;
+    }
+}
 
+@media all and (min-width: 768px) and (max-width: 992px) {
 
+    .second-wrap .step {
+        width: 94%;
+        min-width: 94%;
+        margin: 20px 0px 20px 3%;
+        display: flex;
+        float: left;
+    }
 
+    .third-wrap {
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+        float: left;
+    }
 
+    .third-wrap h1 {
+        width: 95%;
+        height: auto;
+        margin: 50px 0px 0px 3%;
+    }
 
-
+    .third-wrap .block {
+        width: 44%;
+        min-width: 44%;
+        margin-left: 3%;
+    }
+}
 
 
 
