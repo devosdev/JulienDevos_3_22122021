@@ -345,7 +345,8 @@ footer a .fas {
 
 .meal h1 i {
     font-weight: 100;
-    margin-left: 15px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .meal .underline {
