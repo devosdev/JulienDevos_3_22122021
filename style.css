@@ -143,6 +143,11 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.second-wrap .step:hover {
+    background-color: #f5edff;
+    cursor: pointer;
+}
+
 .second-wrap .step .step-row {
     margin: 25px 20px 0px -15px;
     height: 30px;
@@ -176,10 +181,6 @@ body {
     margin: 0;
     height: auto;
     line-height: 80px;
-}
-
-#highlighted-row {
-    background-color: #f5edff;
 }
 
 .third-wrap {
