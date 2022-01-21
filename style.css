@@ -203,9 +203,10 @@ body {
 }
 
 .third-wrap .block {
-    width: 100% - 40px;
-    min-width: 100% - 40px;
+    width: 91%;
+    min-width: 91%;
     height: 300px;
+    max-height: 300px;
     margin: 20px;
     background-color: #FFF;
     border-radius: 20px;
@@ -266,7 +267,7 @@ body {
 .fa-heart::before {
     font-weight: 100;
     transition: color 0.5s ease-out;
-    transition: opacity 05.s;
+    transition: opacity 0.5s;
 }
 
 .fa-heart:hover::before {
@@ -346,6 +347,8 @@ footer a .fas {
     height: auto;
     width: 100%;
     font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    font-weight: 200;
     margin-left: 20px;
     margin: 0px 0px 30px 3%;
 }
