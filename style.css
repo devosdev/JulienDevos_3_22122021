@@ -36,6 +36,10 @@ body {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
 }
 
 .location {
